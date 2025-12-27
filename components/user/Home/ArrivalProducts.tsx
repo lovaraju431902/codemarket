@@ -1,12 +1,13 @@
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrivalData, ArrivalDataInterface } from "@/lib/arrivaldemodata"
+import { products,Product } from '@/lib/arrivaldemodata';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Heart } from 'lucide-react';
 
 import { Oswald, Roboto_Mono } from 'next/font/google'
+// import { ProductCard } from './ProductCard';
 
 
 const oswald = Oswald({
@@ -41,8 +42,8 @@ const ArrivalProducts = () => {
     <div className="bg-linear-to-r from-slate-100 to-purple-200  h-auto ">
 
         <div className="pt-10 space-y-5">
-            <h1 className="text-center font-bold text-2xl">New Arrival Products</h1>
-            <div className="flex flex-wrap justify-center gap-3 px-4">
+     <h1 className="text-center font-bold text-2xl">New Arrival Products</h1>
+    <div className="flex flex-wrap justify-center gap-3 px-4">
     <Button variant="outline" className="whitespace-nowrap">All Item</Button>
     <Button variant="outline" className="whitespace-nowrap">MERN Stack</Button>
     <Button variant="outline" className="whitespace-nowrap">React Native Apps</Button>
@@ -56,16 +57,16 @@ const ArrivalProducts = () => {
 
 
 
-            <div className="px-5">
+            <div className="px-5 mt-5 md:mt-15">
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:px-20 gap-5">
-        {ArrivalData.map((item: ArrivalDataInterface) => (
+        {products.map((item: Product) => (
         
           <Card 
             key={item.id} 
             className="bg-white  border-0 overflow-hidden shadow-xl flex flex-row md:flex-col"
           >
             <div className='m-2'>
-                <Image src={item.image} alt={item.image} width={400} height={400} className='w-80 h-40  md:w-[320px] md:h-[180px] transition-transform duration-300 hover:scale-110  rounded-xl object-cover -mt-6'/>
+                <Image src={item.image} alt={item.image} width={400} height={400} className='w-full h-48  md:w-[320px] md:h-[180px] transition-transform duration-300 hover:scale-110  rounded-xl object-cover -mt-6'/>
             </div>
             <CardContent className=' mr-4'>
                 <h1 className='font-bold'>{item.title}</h1>
@@ -104,7 +105,22 @@ const ArrivalProducts = () => {
         ))}
       </div>
     </div>
- 
+
+
+
+
+{/* 
+
+<section className="py-8 antialiased dark:bg-gray-900 md:py-12">
+      <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
+        <div className="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </div>
+    </section>
+  */}
 
 
 
