@@ -373,7 +373,7 @@ const Header = () => {
   const notificationcount=0
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-50 h-20 bg-white shadow-md py-4 px-4 sm:px-10 transition-all duration-300">
+    <header className="sticky top-0 left-0 right-0 z-50 h-20 bg-white shadow-md py-4 px-4 sm:px-10 transition-all duration-300 overflow-hidden">
       <div className="flex items-center justify-between gap-3 w-full"> {/* Removed flex-wrap to prevent wrapping on small screens */}
         <Link href="/home" className=""> {/* Changed to Link for better Next.js practice */}
           <div className="flex">

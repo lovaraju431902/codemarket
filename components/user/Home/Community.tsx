@@ -67,3 +67,76 @@ const Community = () => {
 }
 
 export default Community
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import Image from "next/image"
+
+// import { Oswald, Roboto_Mono } from 'next/font/google'
+
+// const oswald = Oswald({
+//   subsets: ['latin'],
+//   weight: ['200', '300', '400', '500', '600', '700'],
+//   display: 'swap', // Added for better font loading
+// })
+
+// const robotoMono = Roboto_Mono({
+//   subsets: ['latin'],
+//   weight: ['100', '200', '300', '400', '500', '600', '700'],
+//   style: ['normal', 'italic'],
+//   display: 'swap', // Added for better font loading
+// })
+
+// const Community = () => {
+//   return (
+//     <div className={`${oswald.className} flex items-center py-2 border border-gray-400 w-full max-w-[400px] gap-3 rounded-3xl shadow-sm`}> {/* Fixed: invalid classes (flex-col-2 removed, bg-white-300 -> bg-white, rounded-4xl -> rounded-3xl, added responsive width, shadow for polish */}
+//       <div className="flex -space-x-4"> {/* Removed rtl:space-x-reverse if not needed; kept overlap */}
+//         <Image
+//           className="w-8 h-8 border-2 border-white rounded-full drop-shadow-md"
+//           src="/images/avatar11.png"
+//           alt="User avatar"
+//           width={32}
+//           height={32}
+//           priority={false} // Optional: add if not critical for LCP
+//         />
+//         <Image
+//           className="w-8 h-8 border-2 border-white rounded-full drop-shadow-md"
+//           src="/images/avatar12.png"
+//           alt="User avatar"
+//           width={32}
+//           height={32}
+//         />
+//         <Image
+//           className="w-8 h-8 border-2 border-white rounded-full drop-shadow-md"
+//           src="/images/avatar13.png"
+//           alt="User avatar"
+//           width={32}
+//           height={32}
+//         />
+//         <Image
+//           className="w-8 h-8 border-2 border-white rounded-full drop-shadow-md"
+//           src="/images/avatar15.png"
+//           alt="User avatar"
+//           width={32}
+//           height={32}
+//         />
+//       </div>
+//       <p className="text-sm text-black font-medium flex-1"> {/* Fixed: text-md redundant with text-[14px]; use text-sm (~14px), added flex-1 for text to take remaining space without overflow */}
+//         Over 10k+ freelancers use CodeMarket in Africa
+//       </p>
+//     </div>
+//   )
+// }
+
+// export default Community
