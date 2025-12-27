@@ -320,16 +320,16 @@ import { useEffect, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { icons } from "@/utils/icons";
 import { Search } from "lucide-react";
-import { BBH_Bartle } from 'next/font/google';
+
 import { BBH_Hegarty } from "next/font/google";  
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Community from "./Community";
 
-const bbhBartle = BBH_Bartle({
-  subsets: ['latin'], 
-  weight: ['400'],     
-});
+// const bbhBartle = BBH_Bartle({
+//   subsets: ['latin'], 
+//   weight: ['400'],     
+// });
 
 const bbhHergarty = BBH_Hegarty({
   subsets: ['latin'],
