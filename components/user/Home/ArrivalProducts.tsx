@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { Heart } from 'lucide-react';
 
 import { Oswald, Roboto_Mono } from 'next/font/google'
-// import { ProductCard } from './ProductCard';
+import { ProductCard } from './ProductCard';
 
 
 const oswald = Oswald({
@@ -57,7 +57,7 @@ const ArrivalProducts = () => {
 
 
 
-            <div className="px-5 mt-5 md:mt-15">
+            {/* <div className="px-5 mt-5 md:mt-15">
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:px-20 gap-5">
         {products.map((item: Product) => (
         
@@ -104,12 +104,12 @@ const ArrivalProducts = () => {
           
         ))}
       </div>
-    </div>
+    </div> */}
 
 
 
 
-{/* 
+
 
 <section className="py-8 antialiased dark:bg-gray-900 md:py-12">
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
@@ -120,7 +120,7 @@ const ArrivalProducts = () => {
         </div>
       </div>
     </section>
-  */}
+ 
 
 
 
