@@ -45,7 +45,7 @@ const Herosection = () => {
             <div className="p-5 mt-10  space-y-10 ">
              <Community/>
               <h1
-                className={`animate-fadein text-3xl sm:text-5xl text-black leading-tight ${bbhHergarty.className}`}
+                className={`animate-fadein text-2xl sm:text-5xl text-black leading-tight ${bbhHergarty.className}`}
               >
                 2M+ Curated Applications
               </h1>

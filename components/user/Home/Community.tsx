@@ -20,7 +20,7 @@ const Community = () => {
     
 
         
-<div className="flex py-[6px] border w-[440px]  border-gray-400 flex-col-2 items-center  bg-white-300  gap-3 rounded-4xl">
+<div className="flex py-[6px] border w-[400px]  border-gray-400 flex-col-2 items-center  bg-white-300  gap-3 rounded-4xl">
   
   <div className="flex ml-2 -space-x-4 rtl:space-x-reverse">
     <Image
@@ -55,7 +55,7 @@ const Community = () => {
 
 
  </div>
-  <p className={`text-lg  text-[14px]   text-black font-serif`}>Over 10k+ freelancers use codemarket in Africa</p>
+  <p className={`text-md  text-[14px]   text-black font-serif`}>Over 10k+ freelancers use codemarket in Africa</p>
   
   </div>
     
