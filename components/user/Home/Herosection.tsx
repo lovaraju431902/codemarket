@@ -346,7 +346,7 @@ const Herosection = () => {
 
   return (
     <>
-      <div className="grid overflow-hidden md:grid-cols-2 pt-20 bg-gradient-to-r from-slate-100 to-purple-200 no-scrollbar"> {/* Fixed: overflow-x-hidden -> overflow-hidden (full hide), added no-scrollbar class */}
+      <div className="grid overflow-hidden md:grid-cols-2 pt-20 bg-linear-to-r from-slate-100 to-purple-200 no-scrollbar"> {/* Fixed: overflow-x-hidden -> overflow-hidden (full hide), added no-scrollbar class */}
         <div className="p-5 mt-10 space-y-10 relative z-10"> {/* Added relative z-10 to layer content over animations */}
           <Community />
           <motion.h1 // Wrapped in motion for fade-in sync with images

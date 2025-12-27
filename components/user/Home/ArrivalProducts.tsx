@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { Heart } from 'lucide-react';
 
 import { Oswald, Roboto_Mono } from 'next/font/google'
-import { Separator } from '@/components/ui/separator';
+
 
 const oswald = Oswald({
   subsets: ['latin'],
