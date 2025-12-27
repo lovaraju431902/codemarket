@@ -249,23 +249,9 @@ const Header = () => {
   const notificationcount=0
 
   return (
-    <header className="sticky top-0 left-0  right-0 z-50 h-25 bg-white shadow-md py-4 px-4 sm:px-10 transition-all duration-300">
-      <div className="flex flex-wrap items-center justify-between gap-3 w-full">
-        <a href="/home" className="hidden sm:block">
-          <div className="flex ">
-            <Image
-              src="https://i.imgur.com/BJ2aUae.png"
-              alt="logo"
-              width={36}
-              height={36}
-            />
-            <span className="ml-2 text-2xl text-slate-900  font-bold">
-              CodeMarket
-            </span>
-          </div>
-        </a>
-
-        <a href="#" className="block sm:hidden">
+    <header className="sticky top-0 left-0  right-0 z-50 h-20 bg-white shadow-md py-4 px-4 sm:px-10 transition-all duration-300">
+      <div className="flex flex-wrap items-center  justify-between gap-3 w-full">
+        <a href="/home" className="">
           <div className="flex">
             <Image
               src="https://i.imgur.com/BJ2aUae.png"
@@ -279,7 +265,21 @@ const Header = () => {
           </div>
         </a>
 
-        <div className="hidden sm:block">
+        {/* <a href="#" className="block sm:hidden">
+          <div className="flex">
+            <Image
+              src="https://i.imgur.com/BJ2aUae.png"
+              alt="logo"
+              width={36}
+              height={36}
+            />
+            <span className="ml-2 text-2xl text-slate-900  font-bold">
+              CodeMarket
+            </span>
+          </div>
+        </a> */}
+
+        <div className="hidden md:block">
           <Button
             variant="outline"
             className="border-none text-sm shadow-none hover:text-xl hover:cursor-pointer"
@@ -314,8 +314,8 @@ const Header = () => {
 
         {isProfile ? (
           <>
-          <div className="sm:block hidden">
-            <div className="flex  items-center gap-3 relative border-none">
+          <div className="md:block hidden">
+            <div className="flex  items-center lg:gap-2 xl:gap-3 relative border-none">
              <span className="relative">
               <Badge className={`absolute left-3 bottom-3 w-4 h-4 ${notificationcount>0? "bg-blue-500":"bg-transparent"} `}>{notificationcount>0?notificationcount:''}</Badge>
               
@@ -392,7 +392,7 @@ const Header = () => {
 
 
 
-          <div className="sm:hidden block">
+          <div className="md:hidden block">
             <div className="flex  items-center gap-10 relative border-none">
              <span className="relative">
               <Badge className={`absolute left-3 bottom-3 w-4 h-4 ${notificationcount>0? "bg-blue-500":"bg-transparent"} `}>{notificationcount>0?notificationcount:''}</Badge>

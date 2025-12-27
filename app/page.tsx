@@ -4,10 +4,12 @@ import Herosection from "@/components/user/Home/Herosection";
 
 export default function Home() {
   return (
-  <>
+  <div>
+    
   <Header/>
   <Herosection/>
+  </div>
   
-  </>
+ 
   );
 }
