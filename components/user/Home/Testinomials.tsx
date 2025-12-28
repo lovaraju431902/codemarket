@@ -45,9 +45,9 @@ export function TestimonialCard({
   return (
     <div
       className={cn(
-        'mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4',
+        'mb-4  flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4',
         // theme styles
-        'border-border bg-card/50 border shadow-sm',
+        'border-border bg-white md:bg-transparent border shadow-sm',
         // hover effect
         'transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md',
         className,
